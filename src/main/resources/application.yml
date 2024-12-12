@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: ${APP_PROFILE:dev}
+  application:
+    name: terracota-backend
+  jpa:
+    open-in-view: false
+
+api:
+  security:
+    secret-token: ${SECRET_TOKEN:my-secret-key}
